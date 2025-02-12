@@ -79,7 +79,6 @@ export default function AuthForm({
                 </CardHeader>
                 <CardContent>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        {error && <p className="text-red-500">{error}</p>}
                         <div className="flex flex-col gap-6">
                             <div className="grid gap-2">
                                 <Label htmlFor="username">Username</Label>
@@ -107,6 +106,7 @@ export default function AuthForm({
                                 />
                                 {errors.password && <p className="text-red-500">{errors.password.message as string}</p>}
                             </div>
+                            {error && <p className="text-red-500 text-center">{error}</p>}
                             <Button type="submit" className="w-full">
                                 Login
                             </Button>

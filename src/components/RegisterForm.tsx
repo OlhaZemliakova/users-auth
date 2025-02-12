@@ -79,7 +79,7 @@ export default function RegisterForm({
                 <CardContent>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="flex flex-col gap-6">
-                            <div className="grid gap-1">
+                            <div className="grid gap-2">
                                 <Label htmlFor="username">Username</Label>
                                 <Input
                                     id="username"
@@ -91,7 +91,7 @@ export default function RegisterForm({
                                 />
                                 <p className="text-red-500">{errors.username?.message}</p>
                             </div>
-                            <div className="grid gap-1">
+                            <div className="grid gap-2">
                                 <Label htmlFor="name">Name</Label>
                                 <Input
                                     type="text"
